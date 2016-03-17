@@ -63,8 +63,9 @@ class SignatureES(SignatureDatabaseBase):
                                           }
                                       }},
                               fields=fields,
-                              size=self.size,
-                              timeout=self.timeout)['hits']['hits']
+                              size=self.size
+                              #timeout=self.timeout
+                              )['hits']['hits']
 
         sigs = np.array([x['fields']['signature'] for x in res])
 
