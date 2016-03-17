@@ -107,7 +107,7 @@ class SignatureDatabaseBase(object):
         raise NotImplementedError
 
     def __init__(self, k=16, N=63, n_grid=9,
-                 crop_percentile=(5, 95), distance_cutoff=0.45,
+                 crop_percentile=(5, 95), distance_cutoff=0.39,
                  *signature_args, **signature_kwargs):
         """Set up storage scheme for images
 
